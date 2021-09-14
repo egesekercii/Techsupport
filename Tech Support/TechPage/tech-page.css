@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: Roboto, sans-serif;
+    font-weight: 600;
+}
+
+.navbar {
+    font-size: 20px;
+    top: 0;
+    left: 0;
+    position: fixed;
+    max-width: 10rem;
+    height: 100vh;
+    background-color: #1C75B9;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+.navbar ul {
+    padding: .5em 1.5em;
+    margin: 0;
+}
+.navbar ul li {
+    list-style: none;
+    margin: 2em 0;
+}
+.navbar ul li a{
+    color: black;
+    text-decoration: none;
+    transition: .4s;
+}
+.navbar ul li a:hover{
+    color: white;
+}
+
+.table-div{
+    margin: 0 auto;
+    overflow-x:auto;
+    width: 70%;
+}
+
+.table-div table{
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: 1px solid #ddd;
+}
+
+table th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+
+td a{
+
+}
+
+td a:link, td a:visited {
+  background-color: #f44336;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+td a:hover, td a:active {
+  background-color: red;
+}

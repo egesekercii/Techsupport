@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+*{
+    box-sizing: border-box;
+}
+body{
+    padding: 0;
+    margin: 0;
+    background-color: #1C75B9;
+}
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.login-card{
+    background-color: white;
+    border-radius: 2.5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Roboto, sans-serif;
+    height: 22.5rem;
+    width: 30rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+@media only screen and (max-width: 600px){
+    .login-card{
+        width: 25rem;
+        height: 20rem;
+    }
+}
+.header{
+    font-size: 1.1rem;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+}
+.forms{
+    text-align: center;
+}
+.forms input{
+    margin-top: 1rem;
+}
+.txt-box{
+    width: 50%;
+    font-size: 1em;
+    margin-bottom: .5em;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 2px solid gray;
+    line-height: 1.5em;
+    transition: .4s;
+}
+.txt-box:focus{
+    outline: none !important;
+    border-bottom: 2px solid black;
+    
+}
+#submit-btn{
+    font-size: 1em;
+    width: 50%;
+    background-color: white;
+    color: black;
+    border: 2px solid gray;
+    padding: .5em 1.5em;
+    cursor: pointer;
+    transition: .4s;
+}
+#submit-btn:hover{
+    border: 2px solid black;
+}
